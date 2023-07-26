@@ -32,9 +32,6 @@ A **RFlyD** traz uma tem como objetivo a integração de drone, RFID e site prop
 ## <a name=“Modulo-Desenvolvido”><a/>Modulo Desenvolvido
 
 # <a name=“Software”><a/>Software
-  - [Banco de Dados](#Banco-de-Dados)
-  - [Site](#Site)
-  - [Simulação](#Simulacao)
 ## <a name=“Node-red”><a/>Node-red
 <div><img src="https://cdn.xingosoftware.com/elektor/images/fetch/dpr_1/https%3A%2F%2Fwww.elektormagazine.com%2Fassets%2Fupload%2Fimages%2F42%2F20200612144414_Node-Red-official-logo.png" width=250> </div>
 
@@ -97,9 +94,9 @@ O fluxo do Postgres funciona como uma ferramenta de conexão entre o Node-RED e 
 
 Dentro desse fluxo, temos vários subfluxos que facilitam o trabalho com o banco de dados. Por exemplo, o subfluxo ***Verifica cadastro*** faz requisições ao banco remoto para averiguar informações. O subfluxo ***Atualiza Checked*** que é responsável por alterar de tempos em tempos o status de todos os produtos para falso, a fim de acarretar uma nova leitura utilizando o drone, e temos também o subfluxo ***sincronismo Rele*** que de tempos envia uma mensagem para o tópico RFID a fim de se comunicar com o NoceMCU e manter atualizado nele a informação de que a antena deva funcionar como carregador por indução ou leitor RFID, o valor enviado ao NodeMCU é pego diretamente do banco de dados.
 
-## <a name=“Banco de Dados”><a/>Banco-de-Dados
-## <a name=“Site”><a/>Site
-## <a name=“Simulação”><a/>Simulacao
+# <a name=“Banco-de-Dados”><a/>Banco de Dados
+# <a name=“Site”><a/>Site
+# <a name=“Simulacao”><a/>Simulação
 
 # Autores
 | [<img src="https://avatars.githubusercontent.com/u/56831082?v=4" width=115><br><sub>Arthur Coelho Estevão</sub>](https://github.com/arthurcoelho442) |  [<img src="https://avatars.githubusercontent.com/u/56406192?v=4" width=115><br><sub>Milena da Silva Mantovanelli</sub>](https://github.com/Milena0899) |
