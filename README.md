@@ -26,8 +26,8 @@ Nosso sistema opera com um drone equipado com um módulo que possui um circuito 
 No Node-RED, realizamos uma verificação para determinar se a tag possui cadastro no banco de dados local e, em seguida, alteramos a variável de checagem da tag para "true". Isso permite mostrar no site que a tag foi lida com sucesso. Com essa solução integrada, garantimos um processo eficiente e preciso de leitura de tags RFID e o registro adequado das informações em nosso sistema.
 
 # <a name=“Mode-de-Execucao”><a/>Mode de Execução
-Para executar o projeto como um todo, primeiro é preciso ter executado a instalação correta de todos os repositorios sitados neste readme, sendo eles **(RFID-MQTT
-; SITE; Simulacao)**. Posteriormente ligue o site seguindo as instruções em [Site](#Site), reconfigure a ssid e a senha do wifi no codigo da esp em [Modulo Desenvolvido](#Modulo-Desenvolvido), e com isso você sera capaz de ler as tags e verificar suas alterações no site.
+Para executar o projeto como um todo, primeiro é preciso ter executado a instalação correta de todos os repositorios sitados neste readme, sendo eles **([Node-red](https://github.com/R-FlyD/Node-red); [RFID-MQTT](https://github.com/R-FlyD/RFID-MQTT)
+; [SITE](https://github.com/R-FlyD/SITE); [Simulacao](https://github.com/R-FlyD/Simulacao))**. Posteriormente ligue o site seguindo as instruções em [Site](#Site), reconfigure a ssid e a senha do wifi no codigo da esp em [Modulo Desenvolvido](#Modulo-Desenvolvido), e com isso você sera capaz de ler as tags e verificar suas alterações no site.
 
 # <a name=“Hardware”><a/>Hardware
 ## <a name=“RDM6300”><a/>RDM6300
