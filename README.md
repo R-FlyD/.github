@@ -21,12 +21,12 @@ A automatização do processo de inventário em armazéns é uma necessidade par
 
 A **RFlyD** traz uma tem como objetivo a integração de drone, RFID e site proprío para gestão autônomo de um inventario.
 # <a name=“Funcionamento”><a/>Funcionamento
+Nosso sistema opera com um drone equipado com um módulo que possui um circuito capaz de executar a leitura de tags RFID. Essas tags são lidas por uma antena própria desenvolvida pela nossa equipe, juntamente com um módulo industrial RDM6300, responsável pelo tratamento do sinal. Por meio da ESP (placa de desenvolvimento), exibimos o valor da tag. Posteriormente, a ESP se encarrega de enviar o código da tag via MQTT para o Node-RED, instalado localmente em um computador que compartilha a mesma rede da ESP.
 
+No Node-RED, realizamos uma verificação para determinar se a tag possui cadastro no banco de dados local e, em seguida, alteramos a variável de checagem da tag para "true". Isso permite mostrar no site que a tag foi lida com sucesso. Com essa solução integrada, garantimos um processo eficiente e preciso de leitura de tags RFID e o registro adequado das informações em nosso sistema.
 
 # <a name=“Mode-de-Execucao”><a/>Mode de Execução
-
-
-
+Para executar o projeto como um todo, primeiro é preciso ter executado a instalação correta de todos os repositorios sitados neste readme, sendo eles (). Posteriormente ligue o site seguindo as instruções em [Site](#Site), reconfigure a ssid e a senha do wifi no codigo da esp em [Modulo Desenvolvido](#Modulo-Desenvolvido), e com isso você sera capaz de ler as tags e verificar suas alterações no site.
 
 # <a name=“Hardware”><a/>Hardware
 ## <a name=“RDM6300”><a/>RDM6300
@@ -40,6 +40,7 @@ Implementação pode ser analisada em
 ## <a name=“Drone”><a/>Drone
 ## <a name=“Carregador-Inducao”><a/>Carregador Indução
 ## <a name=“Modulo-Desenvolvido”><a/>Modulo Desenvolvido
+https://github.com/R-FlyD/RFID-MQTT
 
 # <a name=“Software”><a/>Software
 ## <a name=“Node-red”><a/>Node-red
@@ -49,6 +50,10 @@ Implementação pode ser analisada em
 > https://github.com/R-FlyD/Node-red
 
 ## <a name=“Banco-de-Dados”><a/>Banco de Dados
+
+
+
+
 ## <a name=“Site”><a/>Site
 Implementação pode ser analisada em 
 > https://github.com/R-FlyD/SITE
