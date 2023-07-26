@@ -40,7 +40,15 @@ Implementação pode ser analisada em
 > https://github.com/R-FlyD/-ACS712-NodeMCU-12E
 
 ## <a name=“Drone”><a/>Drone
+O drone utilizado para o projeto foi comprado levando em consideração o custo mais acessivel do mercado, o drone escolhido foi o drone Eachine E88 Pro que é um quadricóptero de tamanho compacto, projetado para ser portátil e fácil de transportar. Possui duas câmera HD integrada que permite capturar vídeos e fotos aéreas. O E88 Pro vem com recursos de voo estáveis, como o modo de altitude hold, e também pode ser controlado via aplicativo de smartphone.
+
+<div Align="center"><img src="https://github.com/R-FlyD/RFlyD/assets/56831082/4f361a29-2a9b-4527-bf5f-7c57ab234175" width=250> </div>
+
 ## <a name=“Carregador-Inducao”><a/>Carregador Indução
+O carregador por indução desenvolvido foi elabora utilizando-se de um reator de lampada fluorescente, e do modelo de antena desenvolvido que compoi um solenoide de duas camadas com ambas camadas constituindo 20 espiras no total.
+
+<div Align="center"><img src="https://github.com/R-FlyD/RFlyD/assets/56831082/4cf0ce8d-3dcd-4e63-b9e9-70c2a97a62b8" width=250> </div>
+
 ## <a name=“Modulo-Desenvolvido”><a/>Modulo Desenvolvido
 https://github.com/R-FlyD/RFID-MQTT
 
