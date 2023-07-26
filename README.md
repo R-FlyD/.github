@@ -69,7 +69,7 @@ Percebe-se que esta mensagem, além de conter o payload no formato buffer, cont�
 >### <a name=“postgres”><a/>Postgres
 
 <div align="center">
-    <img src="https://github.com/R-FlyD/RFlyD/assets/56831082/b3680f49-67e6-4e83-ad9f-dd610b0d02a2" width=600><br>
+    <img src="https://github.com/R-FlyD/RFlyD/assets/56831082/42a6c0a5-be07-4e44-aa3e-be212a9a8106" width=500><br>
 </div>
 
 O fluxo do Postgres funciona como uma ferramenta de conexão entre o Node-RED e o banco de dados, permitindo diversas interações com o banco. Por exemplo, é possível verificar o cadastro de uma determinada tag, atualizar o status de um produto, atualizar o historio de possicionamento de um produto e Manter a sincronização da usuabilidade da antena de acordo com o site.
