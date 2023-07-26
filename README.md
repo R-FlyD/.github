@@ -50,7 +50,8 @@ O carregador por indução desenvolvido foi elaborado com base em um reator de l
 <div Align="center"><img src="https://github.com/R-FlyD/RFlyD/assets/56831082/4cf0ce8d-3dcd-4e63-b9e9-70c2a97a62b8" width=250> </div>
 
 ## <a name=“Modulo-Desenvolvido”><a/>Modulo Desenvolvido
-https://github.com/R-FlyD/RFID-MQTT
+Implementação pode ser analisada em 
+> https://github.com/R-FlyD/RFID-MQTT
 
 # <a name=“Software”><a/>Software
 ## <a name=“Node-red”><a/>Node-red
@@ -60,9 +61,6 @@ Implementação pode ser analisada em
 > https://github.com/R-FlyD/Node-red
 
 ## <a name=“Banco-de-Dados”><a/>Banco de Dados
-
-
-
 
 ## <a name=“Site”><a/>Site
 Implementação pode ser analisada em 
