@@ -50,8 +50,37 @@ O carregador por indução desenvolvido foi elaborado com base em um reator de l
 <div Align="center"><img src="https://github.com/R-FlyD/RFlyD/assets/56831082/4cf0ce8d-3dcd-4e63-b9e9-70c2a97a62b8" width=250> </div>
 
 ## <a name=“Modulo-Desenvolvido”><a/>Modulo Desenvolvido
-Implementação pode ser analisada em 
+O codigo final embarcado no NodeMCU pode ser baixado atravez do repositorio:
 > https://github.com/R-FlyD/RFID-MQTT
+
+<div Align="center"><img src="https://github.com/R-FlyD/RFlyD/assets/56831082/ae095901-8dda-42cf-9257-9935caa8ac39" width=300> </div>
+
+O desenvolvimento do hardware se deu em um circuito prototipado na ferramenta CircuitMaker:
+
+<div align="center">
+  <img src="https://github.com/R-FlyD/RFlyD/assets/56831082/c6751b16-3560-4581-8481-35b1c420b7c9" width=300 style="display: block; margin: 0 auto;">
+  <img src="https://github.com/R-FlyD/RFlyD/assets/56831082/90949be2-4d24-474e-b79a-0321018f1d32" width=300 style="display: block; margin: 0 auto;">
+</div>
+
+Onde temos a presença de diodos, capacitores, um resistor de 10k, potenciometro de 10k, um regulador de tensão 7805, modulo leito RFID, sensor de corrente ACS712-30A e um Esp NodeMCU.
+
+Podemos separar esse circuito em 3 partes que podem ser observadas na protoboard abaixo, com intuito de facilitar o entendimento:
+
+<div Align="center"><img src="https://github.com/R-FlyD/RFlyD/assets/56831082/f368a84d-a02b-490f-90d3-97c870390761" width=300> </div>
+
+A primeira delas e o circuito de alimentação que utiliza do regulador de tensão e uma entrada de bateria para carregar o NodeMCU, o modulo RDM6300, o sensor de corrente ACS712-30A, ao mesmo tempo qui temos no circuito a possibilidade de alimentar com uma pateria, caso o circuito for alimentado pela esp via cabo, o funcionamento se manteria o mesmo, devido a bateria ser de 5v+ e o mesmo circuito que é utilizado para alimentar os modulos também é utilizado para alimentar a bateria, utilizamos da difereça de potencia entre a bateria e o circuito para garantir que a bateria só sera carregada caso esteja  abaixo de 5V, utilizamos de capacitores de 100uF e 10uF na saida e na entrada do regulador para impedir ocilaçoes de tensoes.
+
+O segundo circuito que é o circuito de chaveamento da antena, neste circuito temos um relé DPDT Hfd2/003-s, que é acionado com 3v que sai de um pino digital do NodeMCU, a antena esta configurada para executar o chaveamente entre dois circuito, (carregador) ao qual e ligada ao neutro e ao regulador de tensão para alimentar as baterias, e ao cirucito do leitor rfid, onde esta ligada diretamente as entradas de antena no modulo e a um capacitor de 1.2nF para efetuar a ressonancia com a antena desenvolvida. 
+
+E por fim o terceiro cicuito que é o de Leitura do RFID que esta intricicamente relacionado ao NodeMCU e ao modulo RDM6300 onde temos o pino TX ligado diretamente a entrada digital do NodeMCU como exemplificado em nosso repositorio [RFID-MQTT](https://github.com/R-FlyD/RFID-MQTT).
+
+O circuito do sensor de corrente pode ser visto no repositorio [ACS712-NodeMCU-12E](https://github.com/R-FlyD/-ACS712-NodeMCU-12E).
+
+A placa desenvolvida pode ser vista logo abaixo onde podemos observar o desiner das trilhas e a disposição dos componentes pela placa:
+<div align="center">
+  <img src="https://github.com/R-FlyD/RFlyD/assets/56831082/6fc6b1b4-ce2d-4831-8978-6180ddc1b457" width=340 style="display: block; margin: 0 auto;">
+  <img src="https://github.com/R-FlyD/RFlyD/assets/56831082/3e22d722-8422-4b9f-a034-a2d49d830bb3" width=300 style="display: block; margin: 0 auto;">
+</div>
 
 # <a name=“Software”><a/>Software
 ## <a name=“Node-red”><a/>Node-red
