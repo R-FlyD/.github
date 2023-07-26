@@ -5,8 +5,15 @@
 - [Funcionamento](#Funcionamento)
 - [Mode de Execução](#Mode-de-Execucao)
 - [Hardware](#Hardware)
+  - [Drone](#Drone)
+  - [RDM6300](#Drone)
+  - [Carregador Indução](#Carregador-Inducao)
+  - [Modulo Desenvolvido](#Modulo-Desenvolvido)
 - [Software](#Software)
-  - [Node-red](##Node-red)
+  - [Node-red](#Node-red)
+  - [Banco de Dados](#Banco-de-Dados)
+  - [Site](#Site)
+  - [Simulação](#Simulacao)
 
 # <a name=“Objetivo-do-Trabalho”><a/>Objetivo do Trabalho
 A automatização do processo de inventário em armazéns é uma necessidade para garantir a eficiência e a precisão dos estoques. A discrepância entre o sistema virtual e a quantidade física de estoque é um problema comum nas empresas, mas pode ser resolvido com o uso de tecnologias como a identificação por radiofrequência (RFID). A utilização de drones equipados com essa tecnologia permite uma identificação mais rápida, precisa e eficiente dos produtos, além de oferecer vantagens em termos de rapidez, precisão e redução de custos em comparação com outros métodos de catalogação. Com a adoção da automatização do processo de inventário, é possível aumentar a eficiência logística, garantir a satisfação do cliente e melhorar a gestão de recursos.
@@ -17,6 +24,7 @@ A **RFlyD** traz uma tem como objetivo a integração de drone, RFID e site prop
 
 # <a name=“Mode-de-Execucao”><a/>Mode de Execução
 # <a name=“Hardware”><a/>Hardware
+
 # <a name=“Software”><a/>Software
 ## <a name=“Node-red”><a/>Node-red
 Inicialmente, temos todos os nodes separados em dois fluxos: o **Receive Data** e o **Postgres**. No primeiro fluxo, o **Receive Data**, temos o processo de recebimento, tratamento e adição de informações. Já no segundo, o **Postgres**, temos os nodes responsáveis pela comunicação entre o Node-RED e o banco de dados PostgreSQL. 
