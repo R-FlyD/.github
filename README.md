@@ -1,5 +1,6 @@
 <div  Align="justify">
-  
+<div Align="center"><img src="https://github.com/R-FlyD/RFlyD/assets/56831082/4682303c-0db2-4e00-af20-d37f0bf44366" width=700 height=400> </div>
+
 # Sumario
 - [Objetivo do Trabalho](#Objetivo-do-Trabalho)
 - [Funcionamento](#Funcionamento)
