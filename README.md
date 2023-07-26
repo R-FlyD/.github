@@ -61,6 +61,21 @@ Implementação pode ser analisada em
 > https://github.com/R-FlyD/Node-red
 
 ## <a name=“Banco-de-Dados”><a/>Banco de Dados
+<div><img src="https://github.com/R-FlyD/RFlyD/assets/56831082/fbfcca45-bd4d-4405-b08d-188f5f134ef8" width=250> </div>
+
+O banco de dados desenvolvido se deu na utilização do banco de dados PostgreSQL , com a criação de 4 tabelas no banco *control*, *historic*, *product* e *product_identification*, como mostrado na imgem abaixo:
+
+<div align="center"><img src="https://github.com/R-FlyD/RFlyD/assets/56831082/8b8e1c89-c9e3-4a11-a325-fe2aded8f099" width=550> </div>
+
+O banco de dados desenvolvido foi projetado para garantir uma gestão eficiente e precisa dos estoques no armazém. A tabela *product* permite manter um cadastro completo dos produtos armazenados, incluindo informações relevantes como o tipo de produto, seu custo, nome e descrição. Além disso, a associação de uma imagem do produto facilita a identificação visual e auxilia na organização do espaço.
+
+Por outro lado, a tabela *product_identification* possui uma chave estrangeira para product e serve para identificar embalagens presentes no armazém. Como várias caixas podem conter o mesmo produto, o *product_identification* permite diferenciá-las através de um código RFID único para cada uma. Além disso, essa tabela possui um atributo booleano chamado checked, que é utilizado para que o drone saiba se uma caixa foi ou não catalogada.
+
+A inserção da tabela *historic* no banco de dados fornece um acompanhamento detalhado das atividades no armazém. Essa tabela registra a data e o local onde cada caixa foi colocada, permitindo uma visualização detalhada do histórico de movimentação ao longo do tempo. Isso possibilita o rastreamento das caixas em diferentes momentos e locais dentro do armazém, o que é essencial para uma logística mais eficiente e uma gestão precisa dos recursos disponíveis.
+
+Além das tabelas mencionadas anteriormente, também foi utilizada a tabela *control*, que desempenha um papel importante ao possibilitar a escolha da funcionalidade da antena presente no hardware. Por meio dessa tabela, é possível definir se a antena funcionará como um carregador (True), utilizando o carregamento por indução, ou como um leitor RFID (False), para identificar e rastrear as caixas presentes no armazém.
+
+Ao combinar essas tabelas em um banco de dados PostgreSQL, a equipe responsável pelo armazém ganha maior controle e visibilidade sobre o estoque, o que resulta em uma operação mais eficiente e uma melhor experiência para os clientes. A automatização do processo de inventário, impulsionada pelas tecnologias como a identificação por radiofrequência (RFID) e a utilização de drones, contribui para a redução de custos, otimização do tempo e aumento da satisfação dos clientes. O banco de dados desenvolvido se torna ainda mais completo com a inclusão da tabela control, integrando todas as funcionalidades necessárias para uma gestão eficiente e precisa dos estoques.
 
 ## <a name=“Site”><a/>Site
 Implementação pode ser analisada em 
