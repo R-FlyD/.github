@@ -5,8 +5,9 @@
 - [Funcionamento](#Funcionamento)
 - [Mode de Execução](#Mode-de-Execucao)
 - [Hardware](#Hardware)
+  - [RDM6300](#RDM6300)
+  - [ACS712-30A](#ACS712-30A)
   - [Drone](#Drone)
-  - [RDM6300](#Drone)
   - [Carregador Indução](#Carregador-Inducao)
   - [Modulo Desenvolvido](#Modulo-Desenvolvido)
 - [Software](#Software)
@@ -24,9 +25,21 @@ A **RFlyD** traz uma tem como objetivo a integração de drone, RFID e site prop
 
 # <a name=“Mode-de-Execucao”><a/>Mode de Execução
 # <a name=“Hardware”><a/>Hardware
+## <a name=“RDM6300”><a/>RDM6300
+## <a name=“ACS712-30A”><a/>ACS712 30A
+## <a name=“Drone”><a/>Drone
+## <a name=“Carregador-Inducao”><a/>Carregador Indução
+## <a name=“Modulo-Desenvolvido”><a/>Modulo Desenvolvido
 
 # <a name=“Software”><a/>Software
+  - [Banco de Dados](#Banco-de-Dados)
+  - [Site](#Site)
+  - [Simulação](#Simulacao)
 ## <a name=“Node-red”><a/>Node-red
+<div><img src="https://cdn.xingosoftware.com/elektor/images/fetch/dpr_1/https%3A%2F%2Fwww.elektormagazine.com%2Fassets%2Fupload%2Fimages%2F42%2F20200612144414_Node-Red-official-logo.png" width=250> </div>
+
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+
 Inicialmente, temos todos os nodes separados em dois fluxos: o **Receive Data** e o **Postgres**. No primeiro fluxo, o **Receive Data**, temos o processo de recebimento, tratamento e adição de informações. Já no segundo, o **Postgres**, temos os nodes responsáveis pela comunicação entre o Node-RED e o banco de dados PostgreSQL. 
 
 ```mermaid
@@ -83,6 +96,10 @@ Percebe-se que esta mensagem, além de conter o payload no formato buffer, cont�
 O fluxo do Postgres funciona como uma ferramenta de conexão entre o Node-RED e o banco de dados, permitindo diversas interações com o banco. Por exemplo, é possível verificar o cadastro de uma determinada tag, atualizar o status de um produto, atualizar o historio de possicionamento de um produto e Manter a sincronização da usuabilidade da antena de acordo com o site.
 
 Dentro desse fluxo, temos vários subfluxos que facilitam o trabalho com o banco de dados. Por exemplo, o subfluxo ***Verifica cadastro*** faz requisições ao banco remoto para averiguar informações. O subfluxo ***Atualiza Checked*** que é responsável por alterar de tempos em tempos o status de todos os produtos para falso, a fim de acarretar uma nova leitura utilizando o drone, e temos também o subfluxo ***sincronismo Rele*** que de tempos envia uma mensagem para o tópico RFID a fim de se comunicar com o NoceMCU e manter atualizado nele a informação de que a antena deva funcionar como carregador por indução ou leitor RFID, o valor enviado ao NodeMCU é pego diretamente do banco de dados.
+
+## <a name=“Banco de Dados”><a/>Banco-de-Dados
+## <a name=“Site”><a/>Site
+## <a name=“Simulação”><a/>Simulacao
 
 # Autores
 | [<img src="https://avatars.githubusercontent.com/u/56831082?v=4" width=115><br><sub>Arthur Coelho Estevão</sub>](https://github.com/arthurcoelho442) |  [<img src="https://avatars.githubusercontent.com/u/56406192?v=4" width=115><br><sub>Milena da Silva Mantovanelli</sub>](https://github.com/Milena0899) |
